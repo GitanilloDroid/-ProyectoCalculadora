@@ -1,5 +1,5 @@
 public class Calculadora {
-    
+
     private int numero1;
     private int numero2;
     
@@ -13,4 +13,26 @@ public class Calculadora {
     public int suma() {
         return numero1 + numero2;
     }
+
+     // Método realizarOperación
+    public int realizarOperacion(String operacion) {
+        if (operacion.equals("suma")) {
+            return suma();
+        }
+        if (operacion.equals("resta")) {
+            return resta();
+        }
+        if (operacion.equals("multiplicar")) {
+            return multiplicar();
+        }
+        if (operacion.equals("dividir")) {
+            return dividir();
+        }
+        if (operacion.equals("modulo")) {
+            return modulo();
+        }
+        System.out.println("Operación no reconocida");
+        return 0;
+    }
+
 }
