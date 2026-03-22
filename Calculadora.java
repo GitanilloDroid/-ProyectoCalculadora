@@ -14,6 +14,11 @@ public class Calculadora {
         return numero1 + numero2;
     }
 
+     // Método multiplicar
+    public int multiplicar() {
+        return numero1 * numero2;
+    }
+
      // Método realizarOperación
     public int realizarOperacion(String operacion) {
         if (operacion.equals("suma")) {
