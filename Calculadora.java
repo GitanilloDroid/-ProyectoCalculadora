@@ -35,4 +35,10 @@ public class Calculadora {
         return 0;
     }
 
+
+     // Método resta
+    public int resta() {
+        return numero1 - numero2;
+    }
+
 }
