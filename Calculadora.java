@@ -19,6 +19,17 @@ public class Calculadora {
         return numero1 * numero2;
     }
 
+    // Método dividir
+    public int dividir() {
+        if (numero2 != 0) {
+            return numero1 / numero2;
+        } else {
+            System.out.println("Error: No se puede dividir entre 0");
+            return 0;
+        }
+    }
+
+
      // Método realizarOperación
     public int realizarOperacion(String operacion) {
         if (operacion.equals("suma")) {
