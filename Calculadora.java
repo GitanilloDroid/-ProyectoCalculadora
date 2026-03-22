@@ -57,4 +57,14 @@ public class Calculadora {
         return numero1 - numero2;
     }
 
+    // Método módulo (resto de la división)
+    public int modulo() {
+        if (numero2 != 0) {
+            return numero1 % numero2;
+        } else {
+            System.out.println("Error: No se puede hacer módulo entre 0");
+            return 0;
+        }
+    }
+
 }
